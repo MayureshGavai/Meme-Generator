@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+
+
+  .header {
+    display: flex;
+    height: 65px;
+    align-items: center;
+    background: linear-gradient(109.6deg, rgb(157, 75, 199) 11.2%, rgb(119, 81, 204) 83.1%);
+    color: white;
+    padding-left: 100px;
+
+    img {
+      height: 35px;
+      padding-right: 20px;
+    }
+  }
+
+  .form {
+    width: 60%;
+    margin: 3rem auto;
+    display: grid;
+    grid-template: 40px 40px/ 1fr 1fr;
+    gap: 17px;
+
+    input{
+      font-family: 'Montserrat';
+      padding-left: 20px;
+      border: 1px solid grey;
+      border-radius: 10px;
+    }
+
+    button{
+      grid-column: 1/ -1;
+      background: linear-gradient(109.6deg, rgb(157, 75, 199) 11.2%, rgb(119, 81, 204) 83.1%);
+      border: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+      letter-spacing: 2px;
+      font-family: 'Montserrat';
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .meme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    max-height: 400px;
+    position: relative;
+    margin: 0 auto;
+
+    .meme-img{
+      width: 100%;
+      max-height: 400px;
+      border-radius: 5px;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 550px) {
+      .meme-img{
+        width: 60%;
+        height: 250px;
+      }
+    }
+
+    .meme-text{
+      position: absolute;
+      width: 80%;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%);
+      margin: 15px 0;
+      padding: 0 5px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 2rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: white;
+      letter-spacing: 2px;
+      text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+    }
+
+    .top{
+      top: 0;
+    }
+
+    .bottom{
+      bottom: 0;
+    }
+  }
+
+  
+  h5{
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+
+}
